@@ -29,7 +29,7 @@ This story expands the backstory of **Erge**, a character from the official [Lvl
 | Episode | Title                        | Status      | Pages |
 |---------|------------------------------|-------------|-------|
 | 1       | The Nursery of Shadows       | Complete    | 3     |
-| 2       | The Violet Spark             | Planned     | -     |
+| 2       | The Violet Spark             | Placeholder | -     |
 | 3       | The Window to the Wastes     | Planned     | -     |
 | 4       | The San d'Orian Vanguard     | Planned     | -     |
 | 5       | The "Rescue" (Finale Pt.1)   | Planned     | -     |
