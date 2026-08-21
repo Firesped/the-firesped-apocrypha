@@ -3,113 +3,256 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>The Firesped Apocrypha – Episode 1</title>
+  <title>The Firesped Apocrypha – Episode 1: The Nursery of Shadows</title>
   <style>
     * { box-sizing: border-box; margin: 0; padding: 0; }
     body {
       background: #0a0a12;
       color: #e0e0ff;
       font-family: 'Segoe UI', system-ui, sans-serif;
-      line-height: 1.5;
+      line-height: 1.6;
     }
+    a { color: #c4b5fd; text-decoration: none; }
+    a:hover { color: #e9d5ff; text-decoration: underline; }
+
+    /* Header */
     header {
       text-align: center;
-      padding: 2rem 1rem 1rem;
+      padding: 2rem 1rem 1.5rem;
       background: linear-gradient(180deg, #1a1025 0%, #0a0a12 100%);
       border-bottom: 1px solid #3a2a5a;
     }
     header h1 {
-      font-size: 1.8rem;
-      letter-spacing: 0.05em;
+      font-size: 1.9rem;
+      letter-spacing: 0.06em;
       color: #c9b8ff;
-      margin-bottom: 0.3rem;
+      margin-bottom: 0.25rem;
     }
     header .subtitle {
       font-size: 0.95rem;
       color: #8a7aaa;
+      margin-bottom: 1rem;
     }
+    .lvlup-link {
+      display: inline-block;
+      margin-top: 0.4rem;
+      padding: 0.45rem 1.1rem;
+      background: #2a1a4a;
+      border: 1px solid #5b21b6;
+      border-radius: 6px;
+      font-size: 0.9rem;
+      color: #e9d5ff;
+      transition: background 0.2s, border-color 0.2s;
+    }
+    .lvlup-link:hover {
+      background: #3b0764;
+      border-color: #7c3aed;
+      text-decoration: none;
+    }
+
+    /* Episode title */
     .episode-title {
       text-align: center;
-      padding: 1.5rem 1rem 0.5rem;
-      font-size: 1.3rem;
+      padding: 1.8rem 1rem 0.6rem;
+      font-size: 1.45rem;
       color: #a78bfa;
+      font-weight: 600;
     }
+    .episode-meta {
+      text-align: center;
+      font-size: 0.85rem;
+      color: #6b5b8a;
+      margin-bottom: 1.5rem;
+    }
+
+    /* Comic pages */
     .comic-page {
       max-width: 900px;
-      margin: 1.5rem auto;
+      margin: 1.8rem auto;
       padding: 0 1rem;
     }
     .comic-page img {
       width: 100%;
       height: auto;
-      border-radius: 4px;
-      box-shadow: 0 8px 32px rgba(0,0,0,0.6);
+      border-radius: 6px;
+      box-shadow: 0 8px 32px rgba(0,0,0,0.55);
       display: block;
     }
     .page-label {
       text-align: center;
-      font-size: 0.85rem;
+      font-size: 0.8rem;
       color: #6b5b8a;
       margin-bottom: 0.5rem;
-      letter-spacing: 0.1em;
+      letter-spacing: 0.12em;
       text-transform: uppercase;
     }
-    footer {
-      text-align: center;
-      padding: 3rem 1rem 2rem;
-      color: #5a4a7a;
-      font-size: 0.9rem;
+
+    /* Story text section */
+    .story-section {
+      max-width: 720px;
+      margin: 3rem auto 2rem;
+      padding: 0 1.25rem;
     }
-    footer a { color: #a78bfa; text-decoration: none; }
+    .story-section h2 {
+      font-size: 1.25rem;
+      color: #c4b5fd;
+      margin-bottom: 1.2rem;
+      text-align: center;
+      letter-spacing: 0.04em;
+    }
+    .story-text {
+      background: #12101c;
+      border: 1px solid #2e2545;
+      border-radius: 10px;
+      padding: 1.75rem 1.5rem;
+      font-size: 1.02rem;
+      line-height: 1.75;
+      color: #d4d0e8;
+    }
+    .story-text p {
+      margin-bottom: 1.1rem;
+    }
+    .story-text p:last-child {
+      margin-bottom: 0;
+    }
+    .story-text .whisper {
+      font-style: italic;
+      color: #b8a9e0;
+    }
+    .story-text .narration {
+      color: #9ca3af;
+      font-style: italic;
+    }
+
+    /* Navigation */
     .nav {
       text-align: center;
-      padding: 1rem;
+      padding: 1.5rem 1rem 0.5rem;
     }
     .nav a {
       display: inline-block;
-      margin: 0 0.5rem;
-      padding: 0.5rem 1.2rem;
+      margin: 0 0.4rem;
+      padding: 0.55rem 1.3rem;
       background: #2a1a4a;
       color: #c9b8ff;
       border-radius: 6px;
-      text-decoration: none;
       font-size: 0.9rem;
       transition: background 0.2s;
     }
-    .nav a:hover { background: #3a2a6a; }
+    .nav a:hover {
+      background: #3a2a6a;
+      text-decoration: none;
+    }
+    .nav a.disabled {
+      opacity: 0.4;
+      pointer-events: none;
+    }
+
+    /* Footer */
+    footer {
+      text-align: center;
+      padding: 2.5rem 1rem 2rem;
+      color: #5a4a7a;
+      font-size: 0.9rem;
+      border-top: 1px solid #1f1830;
+      margin-top: 2rem;
+    }
+    footer a {
+      color: #a78bfa;
+    }
+    footer .lvlup {
+      margin-top: 0.8rem;
+      font-size: 0.95rem;
+    }
   </style>
 </head>
 <body>
   <header>
     <h1>The Firesped Apocrypha</h1>
     <div class="subtitle">Final Fantasy XI Fan Webcomic · Season 1: Children of Zvahl</div>
+    <a class="lvlup-link" href="https://www.lvlupxp.com/" target="_blank" rel="noopener">
+      Connected to Lvl Up Xplorers →
+    </a>
   </header>
 
   <div class="episode-title">Episode 1 — The Nursery of Shadows</div>
+  <div class="episode-meta">Season 1 · Children of Zvahl</div>
 
+  <!-- Comic Pages -->
   <div class="comic-page">
     <div class="page-label">Page 1</div>
-    <img src="Episode-01-The-Nursery-of-Shadows/page-01.jpg" alt="Episode 1 Page 1">
+    <img src="Episode-01-The-Nursery-of-Shadows/page-01.jpg" alt="Episode 1 Page 1 – Celeste and her mother in Castle Zvahl">
   </div>
 
   <div class="comic-page">
     <div class="page-label">Page 2</div>
-    <img src="Episode-01-The-Nursery-of-Shadows/page-02.jpg" alt="Episode 1 Page 2">
+    <img src="Episode-01-The-Nursery-of-Shadows/page-02.jpg" alt="Episode 1 Page 2 – Amelia with her demon friends and the climb to Celeste">
   </div>
 
   <div class="comic-page">
     <div class="page-label">Page 3</div>
-    <img src="Episode-01-The-Nursery-of-Shadows/page-03.jpg" alt="Episode 1 Page 3">
+    <img src="Episode-01-The-Nursery-of-Shadows/page-03.jpg" alt="Episode 1 Page 3 – The promise and the brother beyond the ice">
+  </div>
+
+  <!-- Story Text -->
+  <div class="story-section">
+    <h2>Story Text</h2>
+    <div class="story-text">
+      <p>In the frozen heart of Castle Zvahl, where the sky itself seems to bleed violet lightning, a girl of pure light is kept in a gilded cage.</p>
+
+      <p>Her name is Celeste. Every day her mother—once Cornelia, now something darker—asks the same question with a smile that never reaches her eyes:</p>
+
+      <p><em>“My light… Have you been good today?”</em></p>
+
+      <p>The bars are not only iron. They are wards, carefully woven to smother the radiance that leaks from Celeste’s skin. When the light grows too bright, the mother reminds her of the consequences. And always, always, the same lie is repeated:</p>
+
+      <p><em>“There is no brother, my darling. Amelia is a liar.”</em></p>
+
+      <p>Celeste’s tears fall onto the stone floor. In a voice almost too quiet to hear, she answers the only truth she still believes:</p>
+
+      <p class="whisper">“He lives in the sunlight…”</p>
+
+      <p>Far below, in the lower halls where the lesser demons gather, Amelia Firesped sits among her unlikely friends—a small red imp, a blue-skinned gargoyle-kin, and a feathered misfit. She leans in, eyes bright with the only hope the castle has not yet crushed.</p>
+
+      <p><em>“Listen… I found a new one about the brother.”</em></p>
+
+      <p><em>“His name is Erge. He lives where the sun actually touches the ground.”</em></p>
+
+      <p>The little demons listen, wide-eyed. Amelia’s voice softens, but the steel underneath remains.</p>
+
+      <p><em>“One day I’m going to find him… and open every cage.”</em></p>
+
+      <p>She leaves them with that promise and climbs the long, cold stairs toward the only other person in the world who still believes it too.</p>
+
+      <p><em>“Almost there…”</em></p>
+
+      <p>Behind the bars, Celeste waits. Amelia presses her hands to the cold iron.</p>
+
+      <p><em>“Tell me again.”</em></p>
+
+      <p>Celeste’s fingers meet hers through the gaps. For a moment the darkness of Zvahl feels a little less absolute.</p>
+
+      <p><em>“He has a name that means something… and one day the three of us will walk out under a sun that does not burn.”</em></p>
+
+      <p>Golden light blooms between them—soft, defiant, impossible. Butterflies of pure aether rise into the air as if the castle itself has forgotten, just for a heartbeat, that such things are not allowed here.</p>
+
+      <p class="narration">Somewhere beyond the ice, their older brother is waiting in the light.</p>
+
+      <p class="narration">End of Episode 1</p>
+    </div>
   </div>
 
   <div class="nav">
-    <a href="#">← Previous</a>
+    <a class="disabled" href="#">← Previous</a>
     <a href="#">Next Episode →</a>
   </div>
 
   <footer>
     <p>End of Episode 1 · To be continued…</p>
-    <p style="margin-top:0.8rem">Connected to the Lvl Up! webcomic universe</p>
+    <div class="lvlup">
+      This story is set in the same universe as<br>
+      <a href="https://www.lvlupxp.com/" target="_blank" rel="noopener">Lvl Up Xplorers</a>
+    </div>
   </footer>
 </body>
 </html>

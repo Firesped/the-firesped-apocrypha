@@ -1,7 +1,7 @@
 # The Firesped Apocrypha
 
 **A Final Fantasy XI Fan Webcomic**  
-*Connected to the Lvl Up! webcomic universe*
+*Connected to the [Lvl Up Xplorers](https://www.lvlupxp.com/) webcomic universe*
 
 ---
 
@@ -19,6 +19,8 @@ Before the catastrophic Northlands expedition, Raogrimm and Cornelia had a first
 - **Amelia** roams freely thanks to her Demonic signature, befriending lower-caste demons and clinging to stories of their older brother Erge who lives "where the sun actually touches the ground."
 
 Amelia's ultimate goal: escape Zvahl, find Erge, and free Celeste.
+
+This story expands the backstory of **Erge**, a character from the official [Lvl Up Xplorers](https://www.lvlupxp.com/) webcomic.
 
 ---
 
@@ -42,8 +44,10 @@ Amelia's ultimate goal: escape Zvahl, find Erge, and free Celeste.
 | Page | File          | Summary |
 |------|---------------|---------|
 | 1    | page-01.jpg   | The cold embrace of Zvahl. Celeste is questioned by her Succubus mother, who denies the existence of their brother and calls Amelia a liar. |
-| 2    | page-02.jpg   | Amelia shares stories of Erge with her demon friends (implying a Yagudo-like and Gargoyle companions). She vows to find him and open every cage, then visits Celeste. |
-| 3    | page-03.jpg   | Amelia and Celeste share a moment of hope through the bars. Celeste recalls the promise of a sun that does not burn. The episode ends with a vision of their older brother Erge waiting beyond the ice. |
+| 2    | page-02.jpg   | Amelia shares stories of Erge with her demon friends. She vows to find him and open every cage, then visits Celeste. |
+| 3    | page-03.jpg   | Amelia and Celeste share a moment of hope through the bars. The episode ends with a vision of their older brother Erge waiting beyond the ice. |
+
+Open `index.html` in a browser to read the full episode with both comic pages and story text.
 
 ---
 
@@ -63,7 +67,7 @@ This project is intended as a vertical-scroll or page-by-page webcomic.
 ## Lore Sources
 - *The Firesped Apocrypha: Lore and Episode Guide*
 - *FFXI Amelia Firesped Lore Expansion*
-- Connected to Lvl Up! webcomic (Erge character)
+- [Lvl Up Xplorers](https://www.lvlupxp.com/) (Erge character)
 
 ---
 
