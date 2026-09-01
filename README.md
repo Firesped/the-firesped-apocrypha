@@ -29,7 +29,7 @@ This story expands the backstory of **Erge**, a character from the official [Lvl
 | Episode | Title                        | Status      | Pages |
 |---------|------------------------------|-------------|-------|
 | 1       | The Nursery of Shadows       | Complete    | 3     |
-| 2       | The Violet Spark             | Placeholder | -     |
+| 2       | The Violet Spark             | Complete    | 5     |
 | 3       | The Window to the Wastes     | Planned     | -     |
 | 4       | The San d'Orian Vanguard     | Planned     | -     |
 | 5       | The "Rescue" (Finale Pt.1)   | Planned     | -     |
@@ -47,7 +47,21 @@ This story expands the backstory of **Erge**, a character from the official [Lvl
 | 2    | page-02.jpg   | Amelia shares stories of Erge with her demon friends. She vows to find him and open every cage, then visits Celeste. |
 | 3    | page-03.jpg   | Amelia and Celeste share a moment of hope through the bars. The episode ends with a vision of their older brother Erge waiting beyond the ice. |
 
-Open `index.html` in a browser to read the full episode with both comic pages and story text.
+Open `index.html` in a browser to read Episode 1 with comic pages and story text.
+
+## Episode 2: The Violet Spark
+
+**Folder:** `Episode-02-The-Violet-Spark/`
+
+| Page | File          | Summary |
+|------|---------------|---------|
+| 1    | page-01.jpg   | Amelia and her demon friends in the Zvahl bailey. Older Kindred trainees bully the little ones. |
+| 2    | page-02.jpg   | Amelia demands they stop. A Kindred calls her half-blood. Her chakra ignites and she strikes. |
+| 3    | page-03.jpg   | The fight escalates. The violet spark bursts into a smokeless storm. |
+| 4    | page-04.jpg   | Their mother arrives, forbids the power, and punishes Amelia. |
+| 5    | page-05.jpg   | Amelia crawls back inside, the spark still alive under her hand. Celeste waits alone. End of episode. |
+
+Open `episode-02.html` to read the full episode with comic pages and story text.
 
 ---
 

@@ -6,182 +6,90 @@
   <title>The Firesped Apocrypha – Episode 2: The Violet Spark</title>
   <style>
     * { box-sizing: border-box; margin: 0; padding: 0; }
-    body {
-      background: #0a0a12;
-      color: #e0e0ff;
-      font-family: 'Segoe UI', system-ui, sans-serif;
-      line-height: 1.6;
-    }
+    body { background: #0a0a12; color: #e0e0ff; font-family: 'Segoe UI', system-ui, sans-serif; line-height: 1.6; }
     a { color: #c4b5fd; text-decoration: none; }
     a:hover { color: #e9d5ff; text-decoration: underline; }
-
-    header {
-      text-align: center;
-      padding: 2rem 1rem 1.5rem;
-      background: linear-gradient(180deg, #1a1025 0%, #0a0a12 100%);
-      border-bottom: 1px solid #3a2a5a;
-    }
-    header h1 {
-      font-size: 1.9rem;
-      letter-spacing: 0.06em;
-      color: #c9b8ff;
-      margin-bottom: 0.25rem;
-    }
-    header .subtitle {
-      font-size: 0.95rem;
-      color: #8a7aaa;
-      margin-bottom: 1rem;
-    }
-    .lvlup-link {
-      display: inline-block;
-      margin-top: 0.4rem;
-      padding: 0.45rem 1.1rem;
-      background: #2a1a4a;
-      border: 1px solid #5b21b6;
-      border-radius: 6px;
-      font-size: 0.9rem;
-      color: #e9d5ff;
-      transition: background 0.2s, border-color 0.2s;
-    }
-    .lvlup-link:hover {
-      background: #3b0764;
-      border-color: #7c3aed;
-      text-decoration: none;
-    }
-
-    .episode-title {
-      text-align: center;
-      padding: 1.8rem 1rem 0.6rem;
-      font-size: 1.45rem;
-      color: #a78bfa;
-      font-weight: 600;
-    }
-    .episode-meta {
-      text-align: center;
-      font-size: 0.85rem;
-      color: #6b5b8a;
-      margin-bottom: 1.5rem;
-    }
-
-    .placeholder {
-      max-width: 720px;
-      margin: 3rem auto;
-      padding: 0 1.25rem;
-      text-align: center;
-    }
-    .placeholder-box {
-      background: #12101c;
-      border: 1px dashed #4c3a6e;
-      border-radius: 12px;
-      padding: 3rem 2rem;
-    }
-    .placeholder-box h2 {
-      font-size: 1.3rem;
-      color: #c4b5fd;
-      margin-bottom: 1rem;
-    }
-    .placeholder-box p {
-      color: #9ca3af;
-      margin-bottom: 0.8rem;
-      line-height: 1.7;
-    }
-    .coming-soon {
-      display: inline-block;
-      margin-top: 1.5rem;
-      padding: 0.5rem 1.4rem;
-      background: #2a1a4a;
-      border-radius: 6px;
-      color: #a78bfa;
-      font-size: 0.9rem;
-      letter-spacing: 0.05em;
-    }
-
-    .story-preview {
-      max-width: 720px;
-      margin: 2rem auto 3rem;
-      padding: 0 1.25rem;
-    }
-    .story-preview h3 {
-      font-size: 1.1rem;
-      color: #c4b5fd;
-      margin-bottom: 1rem;
-      text-align: center;
-    }
-    .story-preview .box {
-      background: #12101c;
-      border: 1px solid #2e2545;
-      border-radius: 10px;
-      padding: 1.5rem;
-      font-size: 0.98rem;
-      line-height: 1.7;
-      color: #b8b0d0;
-    }
-
-    .nav {
-      text-align: center;
-      padding: 1.5rem 1rem 0.5rem;
-    }
-    .nav a {
-      display: inline-block;
-      margin: 0 0.4rem;
-      padding: 0.55rem 1.3rem;
-      background: #2a1a4a;
-      color: #c9b8ff;
-      border-radius: 6px;
-      font-size: 0.9rem;
-      transition: background 0.2s;
-    }
-    .nav a:hover {
-      background: #3a2a6a;
-      text-decoration: none;
-    }
-    .nav a.disabled {
-      opacity: 0.4;
-      pointer-events: none;
-    }
-
-    footer {
-      text-align: center;
-      padding: 2.5rem 1rem 2rem;
-      color: #5a4a7a;
-      font-size: 0.9rem;
-      border-top: 1px solid #1f1830;
-      margin-top: 2rem;
-    }
+    header { text-align: center; padding: 2rem 1rem 1.5rem; background: linear-gradient(180deg, #1a1025 0%, #0a0a12 100%); border-bottom: 1px solid #3a2a5a; }
+    header h1 { font-size: 1.9rem; letter-spacing: 0.06em; color: #c9b8ff; margin-bottom: 0.25rem; }
+    header .subtitle { font-size: 0.95rem; color: #8a7aaa; margin-bottom: 1rem; }
+    .lvlup-link { display: inline-block; margin-top: 0.4rem; padding: 0.45rem 1.1rem; background: #2a1a4a; border: 1px solid #5b21b6; border-radius: 6px; font-size: 0.9rem; color: #e9d5ff; }
+    .lvlup-link:hover { background: #3b0764; border-color: #7c3aed; text-decoration: none; }
+    .episode-title { text-align: center; padding: 1.8rem 1rem 0.6rem; font-size: 1.45rem; color: #a78bfa; font-weight: 600; }
+    .episode-meta { text-align: center; font-size: 0.85rem; color: #6b5b8a; margin-bottom: 1.5rem; }
+    .comic-page { max-width: 900px; margin: 1.8rem auto; padding: 0 1rem; }
+    .comic-page img { width: 100%; height: auto; border-radius: 6px; box-shadow: 0 8px 32px rgba(0,0,0,0.55); display: block; }
+    .page-label { text-align: center; font-size: 0.8rem; color: #6b5b8a; margin-bottom: 0.5rem; letter-spacing: 0.12em; text-transform: uppercase; }
+    .story-section { max-width: 720px; margin: 3rem auto 2rem; padding: 0 1.25rem; }
+    .story-section h2 { font-size: 1.25rem; color: #c4b5fd; margin-bottom: 1.2rem; text-align: center; }
+    .story-text { background: #12101c; border: 1px solid #2e2545; border-radius: 10px; padding: 1.75rem 1.5rem; font-size: 1.02rem; line-height: 1.75; color: #d4d0e8; }
+    .story-text p { margin-bottom: 1.1rem; }
+    .story-text p:last-child { margin-bottom: 0; }
+    .story-text .narration { color: #9ca3af; font-style: italic; }
+    .nav { text-align: center; padding: 1.5rem 1rem 0.5rem; }
+    .nav a { display: inline-block; margin: 0 0.4rem; padding: 0.55rem 1.3rem; background: #2a1a4a; color: #c9b8ff; border-radius: 6px; font-size: 0.9rem; }
+    .nav a:hover { background: #3a2a6a; text-decoration: none; }
+    .nav a.disabled { opacity: 0.4; pointer-events: none; }
+    footer { text-align: center; padding: 2.5rem 1rem 2rem; color: #5a4a7a; font-size: 0.9rem; border-top: 1px solid #1f1830; margin-top: 2rem; }
     footer a { color: #a78bfa; }
-    footer .lvlup {
-      margin-top: 0.8rem;
-      font-size: 0.95rem;
-    }
+    footer .lvlup { margin-top: 0.8rem; font-size: 0.95rem; }
   </style>
 </head>
 <body>
   <header>
     <h1>The Firesped Apocrypha</h1>
     <div class="subtitle">Final Fantasy XI Fan Webcomic · Season 1: Children of Zvahl</div>
-    <a class="lvlup-link" href="https://www.lvlupxp.com/" target="_blank" rel="noopener">
-      Connected to Lvl Up Xplorers →
-    </a>
+    <a class="lvlup-link" href="https://www.lvlupxp.com/" target="_blank" rel="noopener">Connected to Lvl Up Xplorers →</a>
   </header>
 
   <div class="episode-title">Episode 2 — The Violet Spark</div>
   <div class="episode-meta">Season 1 · Children of Zvahl</div>
 
-  <div class="placeholder">
-    <div class="placeholder-box">
-      <h2>Coming Soon</h2>
-      <p>Comic pages for this episode have not been generated yet.</p>
-      <p>This page is a placeholder so navigation between episodes already works.</p>
-      <div class="coming-soon">PAGES IN PROGRESS</div>
-    </div>
+  <div class="comic-page">
+    <div class="page-label">Page 1</div>
+    <img src="Episode-02-The-Violet-Spark/page-01.jpg" alt="Episode 2 Page 1">
+  </div>
+  <div class="comic-page">
+    <div class="page-label">Page 2</div>
+    <img src="Episode-02-The-Violet-Spark/page-02.jpg" alt="Episode 2 Page 2">
+  </div>
+  <div class="comic-page">
+    <div class="page-label">Page 3</div>
+    <img src="Episode-02-The-Violet-Spark/page-03.jpg" alt="Episode 2 Page 3">
+  </div>
+  <div class="comic-page">
+    <div class="page-label">Page 4</div>
+    <img src="Episode-02-The-Violet-Spark/page-04.jpg" alt="Episode 2 Page 4">
+  </div>
+  <div class="comic-page">
+    <div class="page-label">Page 5</div>
+    <img src="Episode-02-The-Violet-Spark/page-05.jpg" alt="Episode 2 Page 5">
   </div>
 
-  <div class="story-preview">
-    <h3>Episode Preview</h3>
-    <div class="box">
-      <p>When Amelia’s demonic playmates are bullied by older Kindred trainees, she attempts to protect them. In the heat of the moment she accidentally ignites her mother’s Hume Chakra, manifesting her signature smokeless violet flame for the first time.</p>
-      <p>Her Succubus mother witnesses the “Hume” martial display and reacts with fury—violently punishing Amelia and forbidding her from ever using that power again.</p>
-      <p>The first true spark of what Amelia will one day become… and the first time the castle truly notices her.</p>
+  <div class="story-section">
+    <h2>Story Text</h2>
+    <div class="story-text">
+      <p>Assign: Castle Zvahl.</p>
+      <p>Snow falls over the outer bailey as older Kindred drill with blades in the dark. Amelia sits on a broken wall with the only friends she has ever chosen for herself—a small feathered misfit, a grey-winged hatchling, and a grinning red imp. She holds up a strip of dried meat like a prize.</p>
+      <p>The little ones laugh. For a moment the castle feels almost ordinary.</p>
+      <p>Then the older trainees notice them. Three grey brutes close in. One of them kicks the hatchling into the snow. Another snatches the feathered child off the ground and holds him like a toy.</p>
+      <p>Amelia stands.</p>
+      <p><em>“Put him down.”</em></p>
+      <p>The Kindred sneers.</p>
+      <p><em>“Or what, half-blood?”</em></p>
+      <p>Something inside her answers before she does. Hume monk chakra—her mother’s old discipline, buried under years of demonic camouflage—ignites. Lightning crawls over her fists. She drives a punch into the nearest face hard enough to spray ice and blood across the snow.</p>
+      <p>She does not stop. She grapples. She kicks. She hits again.</p>
+      <p>Then the spark becomes more than a spark.</p>
+      <p>Violet fire bursts from her body in a silent, smokeless storm. Kindred trainees stagger back. Her friends freeze in the snow, terrified and amazed. For the first time, the castle sees what Amelia actually is: not a camouflaged demon child, but a hybrid carrying a light that does not belong here.</p>
+      <p>The snowfield goes still.</p>
+      <p>On the stairs above them, her mother arrives—wings unfurled, the court falling silent around her. She takes Amelia by the arm.</p>
+      <p><em>“You will never do that again.”</em></p>
+      <p>Amelia looks up, stunned and furious. The mother does not raise her voice. She does not need to. She puts the girl on the ground and speaks as if stating a law of the fortress.</p>
+      <p><em>“That light is a leftover sickness that has no place in my domain.”</em></p>
+      <p>Amelia crawls back into the castle on her own. Blood at her mouth. Demons watching from the dark. In the stairwell she presses a hand to her chest. The violet spark is still there, hidden under skin and cloth, refusing to die.</p>
+      <p>She looks straight ahead.</p>
+      <p><em>“One day.”</em></p>
+      <p class="narration">Lightning tears across the towers of Zvahl. Far above, in a white hall that never sees the sun, Celeste sits alone and waits for a sister who does not come.</p>
+      <p class="narration">End of Episode 2</p>
     </div>
   </div>
 
@@ -191,7 +99,7 @@
   </div>
 
   <footer>
-    <p>Episode 2 · Placeholder</p>
+    <p>End of Episode 2 · To be continued…</p>
     <div class="lvlup">
       This story is set in the same universe as<br>
       <a href="https://www.lvlupxp.com/" target="_blank" rel="noopener">Lvl Up Xplorers</a>
